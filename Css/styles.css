@@ -13,7 +13,6 @@
     --bio-bg-color: #1e2a3a;
     --bio-border-color: #293544;
     --about-bg-color: #111821;
-
 }
 
 .highlight{
@@ -37,7 +36,7 @@
 
 #about-container{
     flex: 1 1 80%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--about-bg-color);
     padding: 50px;
 }
@@ -64,9 +63,41 @@
 #social-container{
     display: flex;
     justify-content: center;
-    list-style:none;
+    list-style: none;
     border-bottom: 1px solid var(--border-color);
     margin-bottom: 25px;
     padding-bottom: 25px;
+}
 
+#social-container li{
+    flex: 1 1 0;
+    max-width: 60px;
+}
+
+#social-container li a{
+    color: var(--main-color);
+    font-size: 30px;
+}
+
+#email-container{
+    display: flex;
+    justify-content: center;
+}
+
+#email-container ion-icon,
+#email-container a{
+    flex: 1 1 0;
+}
+
+#email-container a{
+    color: var(--main-text-color-color);
+    text-decoration: none;
+    max-width: 225px;
+}
+
+#email-container ion-icon{
+    color: var(--main-color);
+    font-size: 20px;
+    margin-right: 5px;
+    max-width: 20px;
 }
